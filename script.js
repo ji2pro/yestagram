@@ -7,12 +7,38 @@ $(document).ready(function() {
 
 InlineEditor
     .create(document.querySelector('#editor'), {
+        toolbar: {
+            items: [
+                'heading',
+                '|',
+                'bold',
+                'italic',
+                'link',
+                'bulletedList',
+                'numberedList',
+                'imageUpload',
+                'blockQuote',
+                'undo',
+                'redo'
+            ]
+        },
+        image: {
+            toolbar: [
+                'imageStyle:full',
+                'imageStyle:side',
+                '|',
+                'imageTextAlternative'
+            ]
+        },
         language: 'ko'
     })
     .catch(error => {
         console.error(error);
     });
+    
+    
 });
+    
 
 // Login
 $(document).ready(function() {
