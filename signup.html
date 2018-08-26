@@ -9,43 +9,48 @@
     <script src="semantic/dist/semantic.min.js"></script>
 
     <!-- Custom -->
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
     <script src="script.js"></script>
     <title>가입하기</title>
 </head>
 
 <body>
-    <form class="ui form segment">
-        <p>계정을 만들어주세요.</p>
-        
-        <div class="field">
-            <label>아이디</label>
-            <input placeholder="이메일 형식" name="email" type="email">
-        </div>
-        
-        <div class="field">
-            <label>이름</label>
-            <input placeholder="최소 2자 이상의 한글" name="username" type="text">
-        </div>
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <div class="ui image">
+                <img src="images/yestagram-icon.png" class="image">
+            </div>
+            <h2 class="ui header violet">
+                <div class="content">
+                    계정을 만들어주세요.
+                </div>
+            </h2>
+            <form class="ui form segment error">
+                <div class="field">
+                    <input placeholder="아이디 : 이메일 형식" name="email" type="email">
+                </div>
 
-        <div class="field">
-            <label>별명</label>
-            <input placeholder="영문 및 숫자" name="nickname" type="text">
+                <div class="field">
+                    <input placeholder="이름 : 최소 2자 이상의 한글" name="username" type="text">
+                </div>
+
+                <div class="field">
+                    <input placeholder="별명 : 영문 및 숫자" name="nickname" type="text">
+                </div>
+
+                <div class="field">
+                    <input type="password" name="password" placeholder="비밀번호 : 영문 및 숫자, 특수 기호">
+                </div>
+                <div class="field">
+                    <input type="password" name="password-check" placeholder="비밀번호 확인">
+                </div>
+
+                <div class="ui fluid large submit button violet">가입하기</div>
+                <div class="ui error message"></div>
+            </form>
         </div>
-        <div class="two fields">
-            <div class="field">
-                <label>비밀번호</label>
-                <input type="password" name="password" placeholder="영문 및 숫자, 특수 기호">
-            </div>
-            <div class="field">
-                <label>비밀번호 확인</label>
-                <input type="password" name="password-check">
-            </div>
-        </div>
-        <div class="ui submit button violet">가입하기</div>
-        <div class="ui error message"></div>
-    </form>
-    
+    </div>
+
 </body>
 
 </html>
